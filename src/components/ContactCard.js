@@ -20,7 +20,7 @@ const ContactCard = ({ contact, deleteContactByIdFromContactsList }) => {
     <div key={id} class="item">
       <img class="ui avatar image" src={img.url} alt={"Dexter"} />
       <div class="content">
-        <Link to={{ pathname: `/users/${id}`, state: { contact } }}>
+        <Link to={{ pathname: `/react-contacts-app/users/${id}`, state: { contact } }}>
           <div class="header">{name}</div>
           <div>{email}</div>
         </Link>
