@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const EditContact = (props) => {
   const { contact } = props.location.state;
@@ -39,7 +40,10 @@ const EditContact = (props) => {
             required
           />
         </div>
-        <button className="ui button blue">Edit</button>
+        <button className="ui button blue">Save</button>
+        <Link to={"/react-contacts-app/"}>
+          <button className="ui button blue">Cancel</button>
+        </Link>
       </form>
     </div>
   );
