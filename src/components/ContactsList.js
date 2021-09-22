@@ -13,7 +13,7 @@ const ContactsList = ({ contacts, deleteFromContactById }) => {
   return (
     <div className="main">
       <h2>Contact List</h2>
-      <Link to={"/add"}>
+      <Link to={"/react-contacts-app/add"}>
         <button className="ui button blue">Add Contact</button>
       </Link>
       <div className="ui celled list">{allcontacts}</div>

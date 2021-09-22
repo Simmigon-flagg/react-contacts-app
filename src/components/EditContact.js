@@ -9,11 +9,11 @@ const EditContact = (props) => {
       name: name.value,
       email: email.value,
     };
-    
+
     if (!update.name) alert("Please Fill in a name");
     if (!update.email) alert("Please Fill in a name");
     props.updateContact(update);
-    props.history.push("/");
+    props.history.push("/react-contacts-app");
   };
   return (
     <div className="ui main">

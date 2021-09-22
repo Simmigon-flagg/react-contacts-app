@@ -30,7 +30,7 @@ const ContactDetails = (props) => {
         </div>
       </div>
       <div className="center-div">
-        <Link to={"/"}>
+        <Link to={"/react-contacts-app"}>
           <button className="ui button blue center">Back</button>
         </Link>
       </div>

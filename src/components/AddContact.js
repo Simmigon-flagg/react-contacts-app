@@ -14,7 +14,7 @@ const AddContact = (props) => {
     props.addAContact({ name, email });
     contactName.current.value = "";
     contactEmail.current.value = "";
-    props.history.push("/");
+    props.history.push("/react-contacts-app");
   };
   return (
     <div className="ui main">
@@ -41,7 +41,7 @@ const AddContact = (props) => {
           />
         </div>
         <button className="ui button blue">Submit</button>
-        <Link to={"/"}>
+        <Link to={"/react-contacts-app"}>
           <button className="ui button blue">Cancel</button>
         </Link>
       </form>

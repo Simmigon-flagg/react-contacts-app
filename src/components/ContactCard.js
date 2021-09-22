@@ -26,7 +26,7 @@ const ContactCard = ({ contact, deleteContactByIdFromContactsList }) => {
         </Link>
       </div>
       <span class="ui right aligned container">
-        <Link to={{ pathname: `/edit`, state: { contact } }}>
+        <Link to={{ pathname: `/react-contacts-app/edit`, state: { contact } }}>
           <i
             className="edit alternate outline icon large"
             style={{ color: "grey" }}

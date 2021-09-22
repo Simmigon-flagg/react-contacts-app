@@ -53,14 +53,14 @@ const App = () => {
         <div className="ui container">
           <Switch>
             <Route
-              path="/add"
+              path="/react-contacts-app/add"
               render={(props) => (
                 <AddContact {...props} addAContact={addAContact} />
               )}
             />
             <Route
               exact
-              path="/"
+              path="/react-contacts-app"
               render={(props) => (
                 <ContactsList
                   {...props}
@@ -77,13 +77,13 @@ const App = () => {
             ></Route> */}
             <Route
               exact
-              path="/edit"
+              path="/react-contacts-app/edit"
               render={(props) => (
                 <EditContact {...props} updateContact={updateContact} />
               )}
             />
 
-            <Route path="/users/:id" component={ContactDetails}></Route>
+            <Route path="/react-contacts-app/users/:id" component={ContactDetails}></Route>
           </Switch>
         </div>
       </Router>
