@@ -6,6 +6,7 @@ const ContactCard = ({ contact, deleteContactByIdFromContactsList }) => {
   const { id, name, email } = contact;
   const [img, setImg] = useState("");
   useEffect(() => {
+    console.log("Here")
     const fetchData = async () => {
       const result = await axios(
         `https://jsonplaceholder.typicode.com/photos/${id}`
